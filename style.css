@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, span {
 
 p {
     line-height: 1.5;
-    font-size: 16px; /* corrected from font-style */
+    font-size: 16px; 
 }
 
 li {
@@ -83,7 +83,7 @@ nav {
 
 /* ABOUT ME */
 #about-me {
-    min-height: 100vh;
+    min-height: 100nvh; 
     display: flex;
     flex-direction: column;
 }
@@ -113,7 +113,7 @@ nav {
 
 .about-me__info--para {
     font-size: 20px;
-    margin-bottom: 28px;
+    margin-bottom: 16px;
 }
 
 /* ABOUT ME LINKS */
@@ -125,12 +125,27 @@ nav {
 .about-me__link {
     display: inline-block;
     margin-right: 20px;
-    color: #6030b1; /* Adjust as needed */
+    color: #6030b1; 
     text-decoration: none;
-    font-size: 24px; /* Adjust as needed */
+    font-size: 24px; 
+    padding: 0 16px;
 }
 
 .about-me__link i {
-    font-size: 24px; /* Adjust as needed */
+    font-size: 24px; 
     margin-right: 5px;
 }
+
+.about-me__info--container {
+flex: 1;
+display: flex;
+align-items: center;
+}
+
+.about-me__img {
+    width: 100%;
+}
+
+ /* TECH - STACK */
+
+ 
