@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-
 * {
   font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
 }
+/* Seans*/
 
 h1,
 h2,
@@ -20,9 +20,9 @@ span {
 }
 
 .row {
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 p {
@@ -49,6 +49,10 @@ li {
   padding: 80px 0;
 }
 
+body {
+  max-width: 100vw;
+}
+
 .text--purple {
   color: #6030b1;
 }
@@ -56,11 +60,11 @@ li {
 /* NAVIGATION BAR */
 
 .nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-max-width: 1200px;
-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
 }
 .nav__link--list {
   display: flex;
@@ -92,13 +96,18 @@ width: 100%;
 }
 
 body {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* ABOUT ME */
 
 #about-me {
   min-height: 100nvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__info {
   display: flex;
   flex-direction: column;
 }
@@ -118,6 +127,8 @@ body {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  margin-bottom: 28px;
+  animation: animate-profile-picture 800ms 200ms backwards;
 }
 
 .about-me__picture {
@@ -126,16 +137,21 @@ body {
   padding-top: 8px;
 }
 
+.about-me__info--title {
+  margin-bottom: 16px;
+  animation: fade-up 650ms 400ms backwards;
+}
+
 .about-me__info--para {
   font-size: 20px;
   margin-bottom: 16px;
+  animation: fade up 650ms 600ms backwards;
 }
 
 .about-me__link {
   font-size: 20px;
   color: #242424;
   padding: 0 16px;
-  align-items: center;
 }
 
 .about-me__links {
@@ -216,5 +232,4 @@ body {
 /* FOOTER */
 
 .footer__logo--img {
-
 }
